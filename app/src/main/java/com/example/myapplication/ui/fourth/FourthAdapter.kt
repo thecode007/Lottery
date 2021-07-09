@@ -9,7 +9,7 @@ import com.example.myapplication.models.Ticket
 class FourthAdapter : RecyclerView.Adapter<FourthViewHolder>()  {
 
     private val tickets:ArrayList<Ticket> = ArrayList()
-
+    var onTicketClickListener: OnTicketClickListener ? = null
 
     fun setData(ticket:ArrayList<Ticket> ) {
         tickets.clear()
@@ -24,10 +24,14 @@ class FourthAdapter : RecyclerView.Adapter<FourthViewHolder>()  {
     }
 
     override fun onBindViewHolder(holder: FourthViewHolder, position: Int) {
-        holder.bind(tickets[position])
+        holder.bind(tickets[position], onTicketClickListener)
     }
 
     override fun getItemCount(): Int {
         return tickets.size
+    }
+
+    interface OnTicketClickListener {
+        fun onTicketClicked(ticket:Ticket)
     }
 }

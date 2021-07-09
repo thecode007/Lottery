@@ -14,11 +14,10 @@ import com.google.gson.Gson
 
 class FourthViewHolder(private val binding: RowTicketBinding): RecyclerView.ViewHolder(binding.root) {
 
-    fun bind(ticket: Ticket) {
+    fun bind(ticket: Ticket, onTicketClickListener: FourthAdapter.OnTicketClickListener?) {
         binding.viewModel = ticket.toString()
+        binding.root.setOnClickListener {
+            onTicketClickListener?.onTicketClicked(ticket)
+        }
     }
-
-
-
-
 }
