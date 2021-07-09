@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lottery</string>
+    <string name="lottery_random_number_generator">ΛΛόττο Γενν Γεννήτρια Τ υχαυχαίων Αριθμ Αριθμών)</string>
+    <string name="pick_random_numbers">Επιλογή ΤυχαΤυχαίων Αριθμ Αριθμών</string>
+    <string name="cost_estimation">Υπολογισμός Κ Κόστουςs</string>
+    <string name="number_of_tickets">Αριθμός Εισιτηρίων:</string>
+    <string name="random_numbers">ΤυχαίοιΑριθμοί</string>
+
+</resources>

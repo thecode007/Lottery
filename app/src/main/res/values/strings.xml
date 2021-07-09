@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lottery</string>
+    <string name="lottery_random_number_generator">Lottery Random Number Generator</string>
+    <string name="pick_random_numbers">Pick Random Numbers</string>
+    <string name="cost_estimation">Cost Estimation</string>
+    <string name="number_of_tickets">Number of Tickets:</string>
+    <string name="random_numbers">Random Numbers</string>
+
+</resources>
